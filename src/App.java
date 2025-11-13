@@ -8,8 +8,13 @@ public class App {
     public static void main(String[] args) throws Exception {
         CarController controller = new CarController();
         Car[] original = makeCarsList();
-        
+        for (int i = 0; i < original.length; i++) {
+            System.out.println(original[i]);
+        }
         controller.sortByName(original);
+        for (int i = 0; i < original.length; i++) {
+            System.out.println(original[i]);
+        }
         
     }
 
